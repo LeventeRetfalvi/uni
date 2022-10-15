@@ -30,6 +30,18 @@ namespace _13_Intervals
                 Console.WriteLine("The entered number is wrong!");
             }
 
+            // shortcutting 'if' to prevent exception
+            int k;
+            Console.Write("Enter a number from [1, 6): ");
+            if (int.TryParse(Console.ReadLine(), out k) && 1 <= k && k < 6)
+            {
+                Console.WriteLine(k);
+            }
+            else
+            {
+                Console.WriteLine("Wrong value!");
+            }
+
             Console.ReadLine();
         }
     }
