@@ -30,7 +30,7 @@ namespace _02_02_Density
             double objectDensity = mass / volume;
             int waterDensity = 997000;
             Console.WriteLine("Density of {0} is {1} kg/m3.", objectName, objectDensity);
-            
+
             if (objectDensity < waterDensity) Console.WriteLine("The {0} will be float on the water.", objectName);
             else if (waterDensity < objectDensity) Console.WriteLine("The {0} will be sank in the water.", objectName);
             else Console.WriteLine("The {0} will float in the water.", objectName);
